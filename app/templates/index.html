@@ -7,9 +7,11 @@
 {% endblock %}
 <!-- Content block -->
 {% block content %}
-
+{% for product in products %}
 <div class="container-fluid m-5">
   <h3>Welcome to flask starter code</h3>
+  {{product.product_price}}
 </div>
 
+{% endfor %}
 {% endblock%}
