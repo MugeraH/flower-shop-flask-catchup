@@ -10,12 +10,13 @@ class Config:
 #     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://'
 
 class ProdConfig(Config):
-     # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://'
+    #SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:root@localhost:5432/flowerdb'
     pass
+    
 
 
 class DevConfig(Config):
-    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:root@localhost:5432/flowerdb'
     DEBUG = True
 
 config_options = {
